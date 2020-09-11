@@ -15,12 +15,13 @@ import java.util.Arrays;
 public class BubbleSort {
     public int[] bubbleSort(int[] nums) {
         int l = nums.length;
-        for(int i=0; i<l; i++) {
+        A:for(int i=0; i<l; i++) {
             for(int j=0; j<l-i-1; j ++) {
                 if(nums[j] > nums[j+1]) {
                     int t = nums[j];
                     nums[j] = nums[j+1];
                     nums[j+1] = t;
+                    break A;
                 }
             }
         }

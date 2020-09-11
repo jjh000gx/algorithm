@@ -28,14 +28,14 @@ public class ReveLinkList {
         current = current.next;
     }
 
-    public ListNode rever1 (ListNode curr) {
+    public ListNode rever1 (ListNode head) {
         ListNode prev = null;
         //ListNode curr = head;
-        while (null != curr) {
-            ListNode temp = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = temp;
+        while (null != head) {
+            ListNode temp = head.next;
+            head.next = prev;
+            prev = head;
+            head = temp;
         }
         return  prev;
     }

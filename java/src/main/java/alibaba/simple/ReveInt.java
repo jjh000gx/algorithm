@@ -1,5 +1,7 @@
 package alibaba.simple;
 
+import java.util.Arrays;
+
 /**
  * 给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
  *
@@ -42,5 +44,9 @@ public class ReveInt {
         int x = 123456789;
         //t.revese(x);
         System.out.println(t.revese(x));
+
+        int[] hh = new int[3];
+        hh[0] = 1;
+        System.out.println(Arrays.toString(hh));
     }
 }

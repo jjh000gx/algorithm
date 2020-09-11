@@ -18,6 +18,20 @@ package alibaba.simple;
  * 链接：https://leetcode-cn.com/problems/implement-strstr
  */
 public class StrStr {
+    private int a;
+    private int b;
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getA() {
+        return  this.a;
+    }
+    public void setB(int b) {
+        this.b = b;
+    }
+
     public int strStr(String haystack, String needle) {
         if(needle.length() == 0) {
             return 0;
@@ -85,6 +99,15 @@ public class StrStr {
     public static void main(String[] argv) {
         StrStr t = new StrStr();
         System.out.println(t.bfStrStr("mississipi", "issipi"));
+
+        StrStr s1 = new StrStr();
+        s1.setA(1);
+        s1.setB(2);
+
+        StrStr s2 = new StrStr();
+        s2.setA(3);
+
+        System.out.println(s1.getA());
     }
 
 }
