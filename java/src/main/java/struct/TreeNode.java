@@ -8,10 +8,10 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
     TreeNode root;
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
     }
-    public  TreeNode() {}
+    public TreeNode() {}
 
     public TreeNode getRoot() {
         return root;

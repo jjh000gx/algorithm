@@ -105,9 +105,17 @@ public class StrStr {
         s1.setB(2);
 
         StrStr s2 = new StrStr();
-        s2.setA(3);
+        s2.setA(s1.getA());
+        s2.setA(10);
 
         System.out.println(s1.getA());
+
+        Integer a = 10;
+        Integer b = a;
+        b = 8;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println("ewrew".substring(1,2));
     }
 
 }
