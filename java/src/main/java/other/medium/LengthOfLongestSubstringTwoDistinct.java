@@ -49,7 +49,7 @@ public class LengthOfLongestSubstringTwoDistinct {
 
     public static void main(String[] argvs) {
         LengthOfLongestSubstringTwoDistinct t = new LengthOfLongestSubstringTwoDistinct();
-        int m = t.lengthOfLongestSubstringTwoDistinct("ccaabbb");
+        int m = t.lengthOfLongestSubstringTwoDistinct("eceba");
         System.out.println(m);
     }
 }

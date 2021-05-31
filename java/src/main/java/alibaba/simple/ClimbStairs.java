@@ -80,6 +80,7 @@ public class ClimbStairs {
     public static void main(String[] argv) {
         ClimbStairs t = new ClimbStairs();
         System.out.println(t.climbStairs(30));
+        t.getClass().getClassLoader();
 
     }
 }

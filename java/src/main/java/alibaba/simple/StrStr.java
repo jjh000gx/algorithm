@@ -1,5 +1,7 @@
 package alibaba.simple;
 
+import java.util.Arrays;
+
 /**
  * 实现 strStr() 函数。
  *
@@ -116,6 +118,10 @@ public class StrStr {
         System.out.println(a);
         System.out.println(b);
         System.out.println("ewrew".substring(1,2));
+
+        String stt = "\uD847\uDDB8";
+        System.out.println(stt);
+        System.out.println(Arrays.toString(stt.getBytes()));
     }
 
 }

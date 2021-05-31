@@ -1,7 +1,5 @@
 package alibaba.medium;
 
-import other.simple.LargestNumber;
-
 import java.util.HashSet;
 import java.util.Set;
 
