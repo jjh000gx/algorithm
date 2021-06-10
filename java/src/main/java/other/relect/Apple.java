@@ -20,6 +20,8 @@ public class Apple {
         Apple apple = new Apple();
         apple.setPrice(5);
         System.out.println("Apple Price:" + apple.getPrice());
+        Method getPriceMethod1 = apple.getClass().getMethod("getPrice");
+        System.out.println("Apple Price:" + getPriceMethod1.invoke(apple));
         //使用反射调用
         Class clz = Class.forName("other.relect.Apple");
         Method setPriceMethod = clz.getMethod("setPrice", int.class);

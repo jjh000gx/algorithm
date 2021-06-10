@@ -16,7 +16,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  *  这种算法，在使用过后也存在弊端：无法应对短时间的突发流量。
  */
-public class LeakyBucket {
+public class    LeakyBucket {
     //桶的容量
     private int capacity = 100;
     //木桶剩余的水滴的量(初始化的时候的空的桶)

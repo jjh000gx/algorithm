@@ -12,6 +12,7 @@ public class JdkProxy implements InvocationHandler {
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("JDK动态代理，监听开始！");
         Object result = method.invoke(target, args);
+        result.hashCode();
         System.out.println("JDK动态代理，监听结束！");
         return result;
     }
@@ -26,6 +27,8 @@ public class JdkProxy implements InvocationHandler {
     public static void main(String[] args) {
         JdkProxy jdkProxy = new JdkProxy();//实例化JDKProxy对象
         UserManager user = (UserManager) jdkProxy.getJDKProxy(new UserManagerImpl());//获取代理对象
+        System.out.println(user.getClass().getName());
+        System.out.println(jdkProxy.getClass().getName());
         user.addUser("admin", "123123");//执行新增方法
     }
 

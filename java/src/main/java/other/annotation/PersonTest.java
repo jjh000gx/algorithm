@@ -2,7 +2,9 @@ package other.annotation;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class PersonTest {
     public static void main(String[] args) throws Exception {
@@ -16,6 +18,7 @@ public class PersonTest {
         System.out.println(Arrays.toString(PersonAnno.class.getDeclaredMethods()));
 
         System.out.println(ana.name() + ":" + ana.age() + ":" + ana.annotationType());
+
 
         Annotation[] annotations = method.getAnnotations();
         for(Annotation annotation : annotations){

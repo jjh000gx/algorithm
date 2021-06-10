@@ -30,6 +30,7 @@ public class ClassLoaderTest {
         System.out.println(obj instanceof jvm.ClassLoaderTest);
 
         ClassLoaderTest a = new ClassLoaderTest();
+        System.out.println(a.getClass());
         System.out.println(a instanceof jvm.ClassLoaderTest);
     }
 }
