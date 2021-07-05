@@ -73,8 +73,8 @@ public class GetMaxSharesProfit {
 
     public static void main(String[] argv) {
         GetMaxSharesProfit t = new GetMaxSharesProfit();
-        int[] prices = new int[]{7,1,5,3,6,4};
-        System.out.println(t.maxProfit(prices));
+        int[] prices = new int[]{7,2,7,3,1,4};
+        System.out.println(t.maxProfit2(prices));
 
     }
 
