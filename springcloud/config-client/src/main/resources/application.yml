@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: config-client
+  #profiles:
+    #active: test
+  config:
+    import: optional:configserver:http://127.0.0.1:8091
+  cloud:
+    config:
+      uri: http://127.0.0.1:8091
+      profile: test
+      #label: test
+      #enabled: false
