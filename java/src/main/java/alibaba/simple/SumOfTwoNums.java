@@ -36,7 +36,8 @@ public class SumOfTwoNums {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{2,7,9,10};
+        int[] nums  = new int[]{2,7,9,10};
+        int []intC[] ={{1,2},{2,3,4},{3,4,5,6}};
         int target = 11;
         SumOfTwoNums t = new SumOfTwoNums();
         int[] b = t.sumofTwoNum(nums,target);

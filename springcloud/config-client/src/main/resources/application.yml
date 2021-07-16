@@ -11,5 +11,5 @@ spring:
     config:
       uri: http://127.0.0.1:8091
       profile: test
-      #label: test
+      label: master
       #enabled: false

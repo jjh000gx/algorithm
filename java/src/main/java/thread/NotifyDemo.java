@@ -71,6 +71,7 @@ public class NotifyDemo {
     }
 
     public static void main(String[] args){
+
         new NotifyDemo().startThreadA();
     }
 }

@@ -9,4 +9,8 @@ public @interface PersonAnno {
 
     String name() default "";
     int age() default 0;
+
+    Class<?>[] groups() default { };
+
+
 }

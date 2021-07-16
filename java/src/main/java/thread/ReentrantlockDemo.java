@@ -1,5 +1,9 @@
 package thread;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.PriorityBlockingQueue;
+import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -39,6 +43,15 @@ public class ReentrantlockDemo implements Runnable {
             System.out.println("线程" + Thread.currentThread().getName() + "结束");
         }
     }
+    //@SuppressWarnings("unchecked")
+    public void addItems(String item){
+
+       // @SuppressWarnings("rawtypes")
+        List items = new ArrayList();
+
+        items.add(item);
+
+    }
 
     public static void main(String[] args) throws InterruptedException {
         //这里虽然创建了两个Runnable实例，但锁是被static修饰的，所以两个实例使用的同一把锁
@@ -49,5 +62,7 @@ public class ReentrantlockDemo implements Runnable {
         t1.start();
         Thread.sleep(1000);
         t2.start();
+        new PriorityBlockingQueue();
+        //new ThreadPoolExecutor();
     }
 }

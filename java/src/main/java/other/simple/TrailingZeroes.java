@@ -1,5 +1,7 @@
 package other.simple;
 
+import java.util.UUID;
+
 /**
  * 给定一个整数 n，返回 n! 结果尾数中零的数量。
  *
@@ -40,6 +42,18 @@ public class TrailingZeroes {
     public static void main(String[] argv) {
         TrailingZeroes tt = new TrailingZeroes();
         System.out.println(tt.trailingZeroes(10));
+        String uuid1 = UUID.randomUUID().toString();
+
+        System.out.println(uuid1);
+
+        UUID uuid = UUID.randomUUID();
+        int version = uuid.version();
+        int variant = uuid.variant();
+        System.out.println(String.format("version:%d,variant:%d", version, variant));
+        uuid = UUID.nameUUIDFromBytes(new byte[0]);
+        version = uuid.version();
+        variant = uuid.variant();
+        System.out.println(String.format("version:%d,variant:%d", version, variant));
 
     }
 }
