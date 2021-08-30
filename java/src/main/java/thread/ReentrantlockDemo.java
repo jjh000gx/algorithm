@@ -62,7 +62,7 @@ public class ReentrantlockDemo implements Runnable {
         t1.start();
         Thread.sleep(1000);
         t2.start();
-        new PriorityBlockingQueue();
+        //new PriorityBlockingQueue();
         //new ThreadPoolExecutor();
     }
 }

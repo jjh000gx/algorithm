@@ -14,3 +14,9 @@ spring:
           timeout: 20
           skipSslValidation: true
           search-paths: '/springcloud/configfile'
+eureka:
+  client:
+    service-url:
+      defaultZone: http://test:123456@eurekaserver1:8761/eureka
+  instance:
+    hostname: localhost

@@ -18,15 +18,7 @@ public class NotifyDemo {
 
     Object lock = new Object();
 
-    public void startThreadA(){
-
-        String amount = new BigDecimal("9.71").multiply(new BigDecimal("100")).setScale(0, BigDecimal.ROUND_HALF_UP).toString();
-        System.out.println(new BigDecimal("9.716").multiply(new BigDecimal("100")));
-        System.out.println(Double.valueOf("9.7")*100);
-        System.out.println(Double.valueOf("2419.4")*100);
-
-        System.out.println(amount);
-
+    public void startThreadA() {
 
         System.out.println(new BigDecimal(0.9));
 

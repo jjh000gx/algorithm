@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: http://127.0.0.1:8091
+      profile: test
+      label: master
+      name: config-client
+      #enabled: false
