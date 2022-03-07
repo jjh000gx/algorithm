@@ -29,12 +29,12 @@ public class QuickSort {
         int pindex = left;
         while (left <= right) {
             //小于基准数据的放在基准的左边，否则放在右边
-            if(nums[left] < pkey) {
+
+            left++;if(nums[left] < pkey) {
                 swap(nums, left, pindex);
                 pindex++;
                 privot = left;
             }
-            left++;
         }
         swap(nums,privot,pindex);
         return pindex;

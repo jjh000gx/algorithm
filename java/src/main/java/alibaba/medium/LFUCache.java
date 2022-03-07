@@ -36,8 +36,7 @@ class LFUCache {
         key_table = new HashMap<Integer, Node>();;
         freq_table = new HashMap<Integer, LinkedList<Node>>();
     }
-
-    public int get(int key) {
+    public synchronized int get(int key) {
         if (capacity == 0) {
             return -1;
         }
