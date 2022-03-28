@@ -1,0 +1,32 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    username: za_dev_usfser
+    password: za_dev_usfser_e1bdc7
+    url: jdbc:mysql://rm-bp1utr02m6tp303p9.mysql.rds.aliyuncs.com:3306/userface_service_00
+    driver-class-name: com.mysql.jdbc.Driver
+    test1:
+      username: za_dev_usfser
+      password: za_dev_usfser_e1bdc7
+      jdbc-url: jdbc:mysql://rm-bp1utr02m6tp303p9.mysql.rds.aliyuncs.com:3306/userface_service_00
+      driverClassName: com.mysql.jdbc.Driver
+    test2:
+      username: za_dev_baseser
+      password: za_dev_baseser_ed63f5
+      jdbc-url: jdbc:mysql://rm-bp1utr02m6tp303p9105.mysql.rds.aliyuncs.com:3306/base_service_00
+      driverClassName: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.example.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper : debug
